@@ -1,18 +1,25 @@
 """
-Practice graphs, adjacency lists, and traversals (BFS, DFS, Dijkstra's algorithm).
+Practice: Graph Algorithms
+Exercises:
+1. Represent a graph as an adjacency list.
+2. Implement BFS and DFS to search for a node.
 """
 
-def bfs_graph(graph, start):
-    # TODO: Implement Breadth-First Search on a graph
-    pass
+class Graph:
+    def __init__(self):
+        self.adj_list = {}
 
-def dfs_graph(graph, start):
-    # TODO: Implement Depth-First Search on a graph
-    pass
+    def add_edge(self, u, v):
+        # TODO: Implement
+        pass
 
-def dijkstra(graph, start):
-    # TODO: Implement Dijkstra's shortest path algorithm
-    pass
+    def bfs(self, start, target):
+        # TODO: Implement
+        pass
+
+    def dfs(self, start, target):
+        # TODO: Implement
+        pass
 
 if __name__ == "__main__":
-    print("--- Graph Algorithms ---")
+    pass

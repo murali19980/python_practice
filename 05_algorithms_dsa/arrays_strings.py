@@ -1,14 +1,12 @@
 """
-Practice common array and string problems (sliding window, prefix sums).
+Practice: Arrays & Strings
+Exercises:
+1. Implement Sliding Window to find the longest subarray with sum K.
 """
 
-def max_sub_array_of_size_k(arr, k):
-    # TODO: Implement Sliding Window approach
-    pass
-
-def prefix_sum_queries(arr):
-    # TODO: Implement Prefix Sum array construction
+def longest_subarray_with_sum(arr, k):
+    # TODO: Implement sliding window
     pass
 
 if __name__ == "__main__":
-    print("--- Arrays and Strings ---")
+    pass

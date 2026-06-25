@@ -1,17 +1,19 @@
 """
-Practice custom context managers using the contextlib module or __enter__/__exit__ methods.
+Practice: Context Managers
+Exercises:
+1. Write a custom context manager using __enter__ and __exit__ to time code execution.
+2. Write another using the @contextmanager decorator.
 """
-
 from contextlib import contextmanager
 
-class CustomOpen:
-    # TODO: Implement file-like context manager using classes
+class TimerContext:
+    # TODO: Implement __enter__ and __exit__
     pass
 
 @contextmanager
-def custom_context():
-    # TODO: Implement context manager using generator and @contextmanager
+def timer_context_decorator():
+    # TODO: Implement
     yield
 
 if __name__ == "__main__":
-    print("--- Context Managers ---")
+    pass

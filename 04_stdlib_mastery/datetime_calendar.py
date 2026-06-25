@@ -1,13 +1,15 @@
 """
-Practice date/time arithmetic, parsing/formatting strings, and timezone basics.
+Practice: Datetime & Calendar
+Exercises:
+1. Print today's date.
+2. Calculate the date 100 days from now.
+3. Find the day of the week for your birthday.
 """
-
 from datetime import datetime, timedelta
 
-def date_practice():
-    # TODO: Practice strftime, strptime, timedelta arithmetic, and calendar functions
+def run_exercises():
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Datetime and Calendar ---")
-    date_practice()
+    run_exercises()

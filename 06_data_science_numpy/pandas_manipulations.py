@@ -1,13 +1,15 @@
 """
-Practice Pandas DataFrames: cleaning, filtering, grouping, and merging datasets.
+Practice: Pandas Manipulations
+Exercises:
+1. Create DataFrame from dict.
+2. Filter rows.
+3. Group by a column and aggregate sum.
 """
+# import pandas as pd
 
-# import pandas as pd # Uncomment when pandas is installed
-
-def pandas_practice():
-    # TODO: Practice loading data, df.head(), filtering rows, groupby aggregation, and merging
+def run_exercises():
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Pandas Manipulations ---")
-    pandas_practice()
+    run_exercises()

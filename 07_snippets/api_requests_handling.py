@@ -1,12 +1,13 @@
 """
-Practice hitting endpoints, handling status codes, headers, and parsing response payloads.
+Practice: API Requests Handling
+Exercises:
+1. Practice hitting endpoints, handling status codes, headers, and parsing response payloads.
 """
-
 # import requests
 
 def fetch_data(url):
-    # TODO: Practice HTTP GET requests, handling errors (raise_for_status), and JSON parsing
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- API Requests Handling ---")
+    pass

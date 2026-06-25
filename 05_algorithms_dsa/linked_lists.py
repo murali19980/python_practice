@@ -1,5 +1,7 @@
 """
-Practice creating, traversing, and reversing Singly and Doubly Linked Lists.
+Practice: Linked Lists
+Exercises:
+1. Implement a singly linked list with append(), prepend(), delete(), and reverse().
 """
 
 class Node:
@@ -10,9 +12,22 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-    
-    # TODO: Implement append, traverse, and reverse methods
-    pass
+
+    def append(self, value):
+        # TODO: Implement
+        pass
+
+    def prepend(self, value):
+        # TODO: Implement
+        pass
+
+    def delete(self, value):
+        # TODO: Implement
+        pass
+
+    def reverse(self):
+        # TODO: Implement
+        pass
 
 if __name__ == "__main__":
-    print("--- Linked Lists ---")
+    pass

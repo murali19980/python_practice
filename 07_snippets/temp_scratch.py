@@ -1,7 +1,24 @@
-# 2026-06-26: Initial setup of the practice scratchpad
+"""
+DAILY SCRATCHPAD
+Date: 2026-06-26
 
-def scratch_pad():
-    print("Happy coding!")
+Purpose: Throwaway testing for new ideas.
+"""
+from datetime import datetime
 
-if __name__ == "__main__":
-    scratch_pad()
+print(f"🧪 Scratchpad: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+print("-" * 30)
+
+# --- Paste your daily experiments below this line ---
+
+# Example: Testing walrus operator
+if (n := len([1, 2, 3])) > 2:
+    print(f"List has {n} elements, which is more than 2.")
+
+# Example: Testing zip with unpacking
+names = ["Alice", "Bob"]
+scores = [95, 82]
+for name, score in zip(names, scores):
+    print(f"{name} scored {score}")
+
+# --- Clean up or comment out when done ---

@@ -1,10 +1,13 @@
 """
-Practice encapsulation using getters, setters, and deleters via the @property decorator.
+Practice: Property Setters
+Exercises:
+1. Create a Temperature class with a private _celsius variable.
+2. Use @property to get it, and a setter to convert from Fahrenheit.
 """
 
 class Temperature:
-    # TODO: Manage internal temperature conversion dynamically using properties
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Properties and Setters ---")
+    pass

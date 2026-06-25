@@ -1,19 +1,14 @@
 """
-Practice concurrency using threading (I/O bound) and asyncio (asynchronous events).
+Practice: Threading & Asyncio
+Exercises:
+1. Write a multithreaded script that downloads (simulate with time.sleep()) 3 pages concurrently.
 """
-
 import threading
-import asyncio
+import time
 
-def run_threads():
-    # TODO: Implement a simple thread task
-    pass
-
-async def run_async():
-    # TODO: Implement a simple asyncio coroutine with await/gather
+def simulate_download(page_num):
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Threading and Asyncio ---")
-    run_threads()
-    asyncio.run(run_async())
+    pass

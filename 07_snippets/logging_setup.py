@@ -1,13 +1,13 @@
 """
-Practice setting up loggers, setting levels (INFO, DEBUG), and outputting to console and files.
+Practice: Logging Setup
+Exercises:
+1. Practice setting up loggers, setting levels (INFO, DEBUG), and outputting to console and files.
 """
-
 import logging
 
-def configure_logger():
-    # TODO: Set up logging basicConfig, file handler, and stream handler
+def setup_logging():
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Logging Setup ---")
-    configure_logger()
+    setup_logging()

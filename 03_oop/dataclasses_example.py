@@ -1,13 +1,12 @@
 """
-Practice the dataclasses module for auto-generating boilerplate class methods.
+Practice: Dataclasses
+Exercises:
+1. Convert a simple class (Person with name, age, city) into a @dataclass.
+2. Use frozen=True and __post_init__.
 """
+from dataclasses import dataclass
 
-from dataclasses import dataclass, field
-
-@dataclass
-class UserProfile:
-    # TODO: Define fields, default values, and post-init processing
-    pass
+# TODO: Implement Person dataclass
 
 if __name__ == "__main__":
-    print("--- Dataclasses ---")
+    pass

@@ -1,15 +1,16 @@
 """
-Practice navigating the file system, handling system commands, and using Path objects.
+Practice: OS, Sys, and Pathlib
+Exercises:
+1. Use pathlib to create a folder, list all .py files, join paths.
+2. Use os.getcwd() and os.chdir().
 """
-
 import os
 import sys
 from pathlib import Path
 
-def navigate_files():
-    # TODO: Practice listing directories, reading paths, check exists, using pathlib
+def run_exercises():
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- OS, Sys, and Pathlib ---")
-    navigate_files()
+    run_exercises()

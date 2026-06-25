@@ -1,11 +1,17 @@
 """
-Practice function definitions, arguments (*args, **kwargs), return values, and variable scope.
+Practice: Functions & Scope
+Exercises:
+1. Write functions with default args, *args, and **kwargs.
+2. Demonstrate global vs local scope.
 """
 
-def practice_function(*args, **kwargs):
-    # TODO: Explore positional/keyword arguments, default values, global/nonlocal keywords
+def demo_args(default_val="default", *args, **kwargs):
+    # TODO: Implement
+    pass
+
+def demo_scope():
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Functions and Scope ---")
-    practice_function()
+    demo_args("hello", 1, 2, 3, key1="value1", key2="value2")

@@ -1,13 +1,16 @@
 """
-Practice NumPy array creation, operations, indexing, and linear algebra.
+Practice: NumPy Arrays
+Exercises:
+1. Create np.array from list.
+2. Reshape to (2,3).
+3. Slice rows/cols.
+4. Compute mean, median, standard deviation.
 """
+# import numpy as np
 
-# import numpy as np # Uncomment when numpy is installed
-
-def numpy_practice():
-    # TODO: Practice np.array, reshape, slicing, element-wise math, and dot product
+def run_exercises():
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- NumPy Arrays ---")
-    numpy_practice()
+    run_exercises()

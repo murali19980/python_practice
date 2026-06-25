@@ -1,16 +1,21 @@
 """
-Practice searching algorithms (Binary Search, Two-Pointer approach).
+Practice: Searching Algorithms
+Exercises:
+1. Implement Binary Search (iterative and recursive).
+2. Implement two-pointer to find a pair that sums to a target.
 """
 
-def binary_search(arr, target):
-    # TODO: Implement Binary Search (assumes sorted array)
+def binary_search_iterative(arr, target):
+    # TODO: Implement
     pass
 
-def two_sum_sorted(arr, target):
-    # TODO: Implement Two-Pointer approach to find two numbers that sum to target
+def binary_search_recursive(arr, target, low, high):
+    # TODO: Implement
+    pass
+
+def two_pointer_sum(arr, target):
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Searching Algorithms ---")
-    test_arr = [1, 3, 5, 7, 9, 11, 13]
-    print(f"Searching for 7: {binary_search(test_arr, 7)}")
+    pass

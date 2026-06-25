@@ -1,14 +1,14 @@
 """
-Practice try-except-else-finally blocks and raising custom exceptions.
+Practice: Exception Handling
+Exercises:
+1. Write a division function that catches ZeroDivisionError, TypeError, and a generic Exception.
+2. Use finally to print "Cleanup done".
 """
 
-class CustomError(Exception):
-    pass
-
-def handle_errors():
-    # TODO: Practice catching specific exceptions, using else/finally, and raising CustomError
+def safe_divide(a, b):
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    print("--- Exception Handling ---")
-    handle_errors()
+    safe_divide(10, 2)
+    safe_divide(10, 0)

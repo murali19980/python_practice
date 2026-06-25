@@ -1,11 +1,14 @@
 """
-Practice variable assignment, type casting, and checking data types.
+Practice: Variables & Data Types
+Exercises:
+1. Declare variables of types: int, float, str, bool, None.
+2. Print their types using type().
+3. Convert a string digit to int, and int to float.
 """
 
-def demonstrate_types():
-    # TODO: Practice with int, float, str, bool, and type conversions
+def main():
+    # TODO: Write your code here
     pass
 
 if __name__ == "__main__":
-    print("--- Variables and Data Types ---")
-    demonstrate_types()
+    main()
