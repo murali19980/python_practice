@@ -5,7 +5,7 @@ Purpose: Throwaway testing for new ideas.
 """
 from datetime import datetime
 
-print(f"🧪 Scratchpad: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+print(f"Scratchpad: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 print("-" * 30)
 
 # --- Paste your daily experiments below this line ---
