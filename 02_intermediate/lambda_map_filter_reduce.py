@@ -1,24 +1,24 @@
 """
 Practice: Lambda, Map, Filter, Reduce
-Exercises:
-1. Use map to square a list.
-2. Use filter to get even numbers.
-3. Use functools.reduce to multiply all elements.
+Prompt:
+- Import functools.reduce.
+1. use_map(nums) -> returns list of squares using map and lambda.
+2. use_filter(nums) -> returns list of even numbers using filter and lambda.
+3. use_reduce(nums) -> returns product of all numbers using reduce and lambda.
 """
-from functools import reduce
+import functools
 
-def square_list(lst):
-    # TODO: Implement using map and lambda
+def use_map(nums):
+    # TODO: Implement
     pass
 
-def get_evens(lst):
-    # TODO: Implement using filter and lambda
+def use_filter(nums):
+    # TODO: Implement
     pass
 
-def multiply_all(lst):
-    # TODO: Implement using reduce and lambda
+def use_reduce(nums):
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":
-    test_list = [1, 2, 3, 4, 5]
-    print("Test List:", test_list)
+    pass

@@ -1,14 +1,14 @@
 """
 Practice: Threading & Asyncio
-Exercises:
-1. Write a multithreaded script that downloads (simulate with time.sleep()) 3 pages concurrently.
+Prompt:
+- Use threading to simulate downloading 3 URLs (use time.sleep(2) to simulate request).
+- Create 3 threads, start them, and use .join() to wait for all.
+- Print "All downloads complete".
 """
 import threading
 import time
 
-def simulate_download(page_num):
-    # TODO: Implement
-    pass
+# TODO: Implement
 
 if __name__ == "__main__":
     pass

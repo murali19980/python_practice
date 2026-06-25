@@ -1,8 +1,7 @@
 """
 Practice: Exception Handling
-Exercises:
-1. Write a division function that catches ZeroDivisionError, TypeError, and a generic Exception.
-2. Use finally to print "Cleanup done".
+Prompt:
+1. safe_divide(a, b) -> returns result. Handle ZeroDivisionError, TypeError (if a or b isn't a number), and a generic Exception. Use finally to print "Execution completed".
 """
 
 def safe_divide(a, b):
@@ -10,5 +9,4 @@ def safe_divide(a, b):
     pass
 
 if __name__ == "__main__":
-    safe_divide(10, 2)
-    safe_divide(10, 0)
+    pass

@@ -1,33 +1,23 @@
 """
 Practice: Linked Lists
-Exercises:
-1. Implement a singly linked list with append(), prepend(), delete(), and reverse().
+Prompt:
+- Define Node class with data and next.
+- Define LinkedList class with:
+  - append(data) -> adds to end.
+  - prepend(data) -> adds to front.
+  - delete(data) -> removes first occurrence.
+  - reverse() -> reverses the list in-place.
+  - display() -> prints list as 1 -> 2 -> None.
+- Test all methods.
 """
 
 class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+    # TODO: Implement
+    pass
 
 class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def append(self, value):
-        # TODO: Implement
-        pass
-
-    def prepend(self, value):
-        # TODO: Implement
-        pass
-
-    def delete(self, value):
-        # TODO: Implement
-        pass
-
-    def reverse(self):
-        # TODO: Implement
-        pass
+    # TODO: Implement
+    pass
 
 if __name__ == "__main__":
     pass

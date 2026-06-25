@@ -1,19 +1,19 @@
 """
 Practice: Iterators & Generators
-Exercises:
-1. Write a generator that yields Fibonacci numbers up to N.
-2. Write a generator that reads a huge file line-by-line (simulate with a large string).
-3. Understand yield vs return.
+Prompt:
+1. fibonacci_gen(n) -> generator that yields Fibonacci numbers up to n terms.
+2. read_large_file_gen(file_path) -> generator that reads a file line by line (simulate by splitting a large multi-line string).
+3. Write a for loop that iterates over fibonacci_gen(10) and prints values.
 """
 
 def fibonacci_gen(n):
     # TODO: Implement
     pass
 
-def read_large_file_sim(data_str):
-    # TODO: Implement line-by-line generator
+def read_large_file_gen(file_path):
+    # TODO: Implement (simulate using a multi-line string)
     pass
 
 if __name__ == "__main__":
-    # Test generator here
+    # Write a for loop that iterates over fibonacci_gen(10) and prints values
     pass

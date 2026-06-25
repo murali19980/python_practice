@@ -1,16 +1,18 @@
 """
 Practice: OS, Sys, and Pathlib
-Exercises:
-1. Use pathlib to create a folder, list all .py files, join paths.
-2. Use os.getcwd() and os.chdir().
+Prompt:
+- Use pathlib.Path:
+  1. Create a folder named test_folder (if not exists).
+  2. List all .py files in the current directory.
+  3. Join two paths using /.
+- Use os:
+  4. Print current working directory, change directory to test_folder, create a dummy file, print its absolute path.
 """
 import os
 import sys
 from pathlib import Path
 
-def run_exercises():
-    # TODO: Implement
-    pass
+# TODO: Implement
 
 if __name__ == "__main__":
-    run_exercises()
+    pass

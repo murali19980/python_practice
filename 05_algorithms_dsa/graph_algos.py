@@ -1,25 +1,17 @@
 """
 Practice: Graph Algorithms
-Exercises:
-1. Represent a graph as an adjacency list.
-2. Implement BFS and DFS to search for a node.
+Prompt:
+- Define Graph class:
+  - __init__ -> self.adj = {}
+  - add_edge(u, v) -> adds undirected edge.
+  - bfs(start) -> returns BFS traversal list.
+  - dfs(start) -> returns DFS traversal list (recursive or iterative with stack).
+- Test on a graph with 5 nodes.
 """
 
 class Graph:
-    def __init__(self):
-        self.adj_list = {}
-
-    def add_edge(self, u, v):
-        # TODO: Implement
-        pass
-
-    def bfs(self, start, target):
-        # TODO: Implement
-        pass
-
-    def dfs(self, start, target):
-        # TODO: Implement
-        pass
+    # TODO: Implement
+    pass
 
 if __name__ == "__main__":
     pass

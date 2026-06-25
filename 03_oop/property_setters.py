@@ -1,8 +1,13 @@
 """
 Practice: Property Setters
-Exercises:
-1. Create a Temperature class with a private _celsius variable.
-2. Use @property to get it, and a setter to convert from Fahrenheit.
+Prompt:
+- Define Temperature class:
+  - Private attribute _celsius.
+  - @property for celsius -> returns _celsius.
+  - @celsius.setter -> sets _celsius.
+  - @property for fahrenheit -> calculates from celsius.
+  - @fahrenheit.setter -> sets _celsius from fahrenheit input.
+- Test: Set Celsius, get Fahrenheit; then set Fahrenheit, get Celsius.
 """
 
 class Temperature:

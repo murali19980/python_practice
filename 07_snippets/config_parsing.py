@@ -1,12 +1,13 @@
 """
 Practice: Configuration Parsing
-Exercises:
-1. Practice loading configuration values from INI files or dotenv files.
+Prompt:
+- Import configparser.
+1. Create a config.ini in memory with sections [DEFAULT] and [database].
+2. Write config.ini to disk.
+3. Read it back and print the host from [database].
 """
 
-def load_config():
-    # TODO: Implement
-    pass
+# TODO: Implement
 
 if __name__ == "__main__":
-    load_config()
+    pass

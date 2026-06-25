@@ -1,10 +1,10 @@
 """
 Practice: Inheritance & Polymorphism
-Exercises:
-1. Create Animal parent class.
-2. Inherit Dog and Cat.
-3. Override a .speak() method.
-4. Demonstrate polymorphism with a list of animals.
+Prompt:
+- Define Animal class with __init__(self, name) and speak(self) that returns "Some sound".
+- Define Dog (inherits Animal) -> speak() returns "Woof!".
+- Define Cat (inherits Animal) -> speak() returns "Meow!".
+- Create a list [Dog("Buddy"), Cat("Whiskers")] and loop through them calling speak() (polymorphism).
 """
 
 class Animal:

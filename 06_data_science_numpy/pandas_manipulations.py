@@ -1,15 +1,13 @@
 """
 Practice: Pandas Manipulations
-Exercises:
-1. Create DataFrame from dict.
-2. Filter rows.
-3. Group by a column and aggregate sum.
+Prompt:
+- Import pandas as pd.
+1. Create DataFrame: {'Name': ['A', 'B'], 'Score': [85, 90]}.
+2. Filter rows where Score > 86.
+3. Group by 'Name' and sum scores (if there are duplicates).
 """
-# import pandas as pd
 
-def run_exercises():
-    # TODO: Implement
-    pass
+# TODO: Implement
 
 if __name__ == "__main__":
-    run_exercises()
+    pass

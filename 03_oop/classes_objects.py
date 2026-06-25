@@ -1,12 +1,16 @@
 """
 Practice: Classes & Objects
-Exercises:
-1. Create a BankAccount class with balance, deposit(), withdraw().
-2. Ensure withdrawal doesn't go negative.
+Prompt:
+- Define BankAccount class:
+  - __init__(self, owner, balance=0)
+  - deposit(self, amount) -> adds if amount > 0.
+  - withdraw(self, amount) -> subtracts if funds sufficient; else print "Insufficient funds".
+  - get_balance(self) -> returns balance.
+- Create an instance, perform deposits/withdrawals, and print balance.
 """
 
 class BankAccount:
-    # TODO: Implement constructor and methods
+    # TODO: Implement
     pass
 
 if __name__ == "__main__":

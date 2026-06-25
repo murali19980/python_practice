@@ -1,17 +1,22 @@
 """
 Practice: JSON & CSV Parsing
-Exercises:
-1. Write a list of dicts to a JSON file. Read it back.
-2. Simulate CSV reading by splitting a string on commas.
+Prompt:
+- Import json.
+1. write_json(data, file) -> writes list of dicts to JSON.
+2. read_json(file) -> reads and returns JSON data.
+3. CSV simulation: Take a string "name,age\nAlice,30\nBob,25", split by lines and commas, and parse into a list of dicts (manually, without csv module).
 """
 import json
-import csv
 
-def json_demo():
+def write_json(data, file):
     # TODO: Implement
     pass
 
-def csv_sim(csv_str):
+def read_json(file):
+    # TODO: Implement
+    pass
+
+def csv_simulation(csv_str):
     # TODO: Implement
     pass
 

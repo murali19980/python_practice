@@ -1,21 +1,22 @@
 """
 Practice: Itertools
-Exercises:
-1. Use cycle to create a traffic light loop.
-2. Use combinations to find all pairs from a list.
-3. Use groupby to group a list of numbers by even/odd.
+Prompt:
+- Import itertools.
+1. cycle_traffic_light() -> use cycle(['Green', 'Yellow', 'Red']) to print 5 states.
+2. find_combinations(lst, r) -> use combinations to print all pairs from [1,2,3,4].
+3. group_by_odd_even(nums) -> use groupby (sorted first) to group numbers into odd/even keys.
 """
 import itertools
 
-def traffic_light():
+def cycle_traffic_light():
     # TODO: Implement
     pass
 
-def find_pairs(lst):
+def find_combinations(lst, r):
     # TODO: Implement
     pass
 
-def group_even_odd(lst):
+def group_by_odd_even(nums):
     # TODO: Implement
     pass
 

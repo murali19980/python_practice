@@ -1,18 +1,21 @@
 """
 Practice: Trees & Traversals
-Exercises:
-1. Build a simple Binary Tree Node.
-2. Write BFS (level-order) and DFS (in-order, pre-order, post-order).
+Prompt:
+- Define TreeNode class with val, left, right.
+- Build a sample tree: root=1, left=2, right=3, left.left=4, left.right=5.
+- Implement:
+  - bfs(root) -> level-order traversal using a queue, return list.
+  - dfs_inorder(root) -> recursive, return list.
+  - dfs_preorder(root) -> recursive.
+  - dfs_postorder(root) -> recursive.
 """
 
 class TreeNode:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+    # TODO: Implement
+    pass
 
 def bfs(root):
-    # TODO: Implement BFS level-order traversal
+    # TODO: Implement
     pass
 
 def dfs_inorder(root):

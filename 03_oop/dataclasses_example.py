@@ -1,12 +1,15 @@
 """
 Practice: Dataclasses
-Exercises:
-1. Convert a simple class (Person with name, age, city) into a @dataclass.
-2. Use frozen=True and __post_init__.
+Prompt:
+- Import dataclass.
+- Define Person dataclass with name: str, age: int, city: str = "Unknown".
+- Add frozen=True to make it immutable.
+- Implement __post_init__ to print "Person created!".
+- Create an instance and try modifying it (catch the frozen error).
 """
 from dataclasses import dataclass
 
-# TODO: Implement Person dataclass
+# TODO: Implement
 
 if __name__ == "__main__":
     pass
