@@ -1,0 +1,7 @@
+# Standard library is sufficient for 90% of this repo.
+# Add third-party libs here when you experiment with them:
+# numpy
+# pandas
+# matplotlib
+# requests
+# pytest
