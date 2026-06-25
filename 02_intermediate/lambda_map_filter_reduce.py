@@ -1,24 +1,19 @@
 """
 Practice: Lambda, Map, Filter, Reduce
-Prompt:
-- Import functools.reduce.
-1. use_map(nums) -> returns list of squares using map and lambda.
-2. use_filter(nums) -> returns list of even numbers using filter and lambda.
-3. use_reduce(nums) -> returns product of all numbers using reduce and lambda.
 """
-import functools
+from functools import reduce
 
 def use_map(nums):
-    # TODO: Implement
-    pass
+    return list(map(lambda x: x**2, nums))
 
 def use_filter(nums):
-    # TODO: Implement
-    pass
+    return list(filter(lambda x: x % 2 == 0, nums))
 
 def use_reduce(nums):
-    # TODO: Implement
-    pass
+    return reduce(lambda a, b: a * b, nums)
 
 if __name__ == "__main__":
-    pass
+    nums = [1, 2, 3, 4, 5]
+    print("Map (squares):", use_map(nums))
+    print("Filter (evens):", use_filter(nums))
+    print("Reduce (product):", use_reduce(nums))

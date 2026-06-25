@@ -1,22 +1,43 @@
 """
-Practice: Lists, Tuples, & Sets
-Prompt:
-1. list_operations(): Create nums = [1, 2, 3, 4]. Append 5, insert 0 at index 0, remove 3, pop the last element, slice to get [2, 3]. Print after each step.
-2. set_operations(): Create A = {1, 2, 3}, B = {3, 4, 5}. Print union, intersection, difference (A - B), and symmetric difference.
-3. tuple_example(): Create a tuple (10, 20, 30). Try modifying it (catch the error in a try/except). Convert it to a list, modify, and convert back.
+Practice: Lists, Tuples, Sets
 """
-
 def list_operations():
-    # TODO: Implement
-    pass
+    nums = [1, 2, 3, 4]
+    print("Original:", nums)
+    nums.append(5)
+    print("Append 5:", nums)
+    nums.insert(0, 0)
+    print("Insert 0 at index 0:", nums)
+    nums.remove(3)
+    print("Remove 3:", nums)
+    popped = nums.pop()
+    print(f"Pop last ({popped}):", nums)
+    # Slicing the original nums (1, 2, 3, 4) to get [2, 3]
+    original_nums = [1, 2, 3, 4]
+    sliced = original_nums[1:3]
+    print(f"Slice of original [1:3] to get [2, 3]: {sliced}")
+    return nums
 
 def set_operations():
-    # TODO: Implement
-    pass
+    A = {1, 2, 3}
+    B = {3, 4, 5}
+    print(f"A: {A}, B: {B}")
+    print(f"Union: {A | B}")
+    print(f"Intersection: {A & B}")
+    print(f"Difference A - B: {A - B}")
+    print(f"Symmetric difference: {A ^ B}")
 
 def tuple_example():
-    # TODO: Implement
-    pass
+    t = (10, 20, 30)
+    print(f"Tuple: {t}")
+    try:
+        t[0] = 100
+    except TypeError as e:
+        print(f"Modification failed (as expected): {e}")
+    lst = list(t)
+    lst[0] = 100
+    t2 = tuple(lst)
+    print(f"Converted to list, modified, back to tuple: {t2}")
 
 if __name__ == "__main__":
     list_operations()

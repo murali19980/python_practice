@@ -1,16 +1,20 @@
 """
-Practice: Datetime & Calendar
-Prompt:
-- Import datetime and calendar.
-1. Print today's date in YYYY-MM-DD format.
-2. Calculate and print the date 100 days from now.
-3. Print the day of the week (e.g., "Monday") for your birthday (use any date).
-4. Print the calendar for the current month.
+Practice: datetime & calendar
 """
-from datetime import datetime, timedelta
+import datetime
 import calendar
 
-# TODO: Implement
+def datetime_demo():
+    today = datetime.date.today()
+    print(f"Today: {today.strftime('%Y-%m-%d')}")
+    future = today + datetime.timedelta(days=100)
+    print(f"100 days from now: {future}")
+    birthday = datetime.date(1990, 6, 15)  # change this
+    print(f"Birthday: {birthday.strftime('%A')}")
+
+def calendar_demo():
+    print(calendar.month(2026, 6))
 
 if __name__ == "__main__":
-    pass
+    datetime_demo()
+    calendar_demo()

@@ -1,10 +1,8 @@
 """
-Practice: Classic Sorting Algorithms
-Goal: Implement from memory.
+Practice: Sorting Algorithms
 """
-import random
-
 def bubble_sort(arr):
+    arr = arr[:]
     n = len(arr)
     for i in range(n):
         swapped = False
@@ -22,7 +20,6 @@ def merge_sort(arr):
     mid = len(arr) // 2
     left = merge_sort(arr[:mid])
     right = merge_sort(arr[mid:])
-    
     merged = []
     i = j = 0
     while i < len(left) and j < len(right):
@@ -39,7 +36,7 @@ def merge_sort(arr):
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
-    pivot = arr[len(arr) // 2]
+    pivot = arr[len(arr)//2]
     left = [x for x in arr if x < pivot]
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
@@ -47,6 +44,7 @@ def quick_sort(arr):
 
 if __name__ == "__main__":
     test = [64, 34, 25, 12, 22, 11, 90]
-    print("Bubble:", bubble_sort(test.copy()))
-    print("Merge:", merge_sort(test.copy()))
-    print("Quick:", quick_sort(test.copy()))
+    print("Original:", test)
+    print("Bubble:", bubble_sort(test))
+    print("Merge:", merge_sort(test))
+    print("Quick:", quick_sort(test))

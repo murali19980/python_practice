@@ -46,8 +46,15 @@ def cache(func):
 # --- Usage ---
 @timer
 def slow_function():
-    time.sleep(1)
+    time.sleep(0.5)
     return "Done"
+
+@retry(max_tries=3)
+def unstable_function():
+    unstable_function.calls = getattr(unstable_function, 'calls', 0) + 1
+    if unstable_function.calls < 3:
+        raise ValueError("Temporary connection timeout")
+    return "Recovered and Succeeded!"
 
 @cache
 def expensive_multiply(a, b):
@@ -55,6 +62,9 @@ def expensive_multiply(a, b):
     return a * b
 
 if __name__ == "__main__":
-    slow_function()
-    expensive_multiply(5, 6)
-    expensive_multiply(5, 6)  # This will hit the cache
+    print(slow_function())
+    print("\nTesting unstable function with @retry:")
+    print(unstable_function())
+    print("\nTesting caching:")
+    print(expensive_multiply(5, 6))
+    print(expensive_multiply(5, 6))  # This will hit the cache

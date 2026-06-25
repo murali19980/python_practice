@@ -38,3 +38,11 @@ Thumbs.db
 *.parquet
 *.pkl
 *.joblib
+
+# Generated output files
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.ini
+

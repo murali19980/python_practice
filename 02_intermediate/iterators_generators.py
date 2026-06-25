@@ -1,19 +1,25 @@
 """
 Practice: Iterators & Generators
-Prompt:
-1. fibonacci_gen(n) -> generator that yields Fibonacci numbers up to n terms.
-2. read_large_file_gen(file_path) -> generator that reads a file line by line (simulate by splitting a large multi-line string).
-3. Write a for loop that iterates over fibonacci_gen(10) and prints values.
 """
-
 def fibonacci_gen(n):
-    # TODO: Implement
-    pass
+    a, b = 0, 1
+    count = 0
+    while count < n:
+        yield a
+        a, b = b, a + b
+        count += 1
 
-def read_large_file_gen(file_path):
-    # TODO: Implement (simulate using a multi-line string)
-    pass
+def read_large_file_gen(text):
+    for line in text.splitlines():
+        yield line
 
 if __name__ == "__main__":
-    # Write a for loop that iterates over fibonacci_gen(10) and prints values
-    pass
+    print("Fibonacci (10 terms):")
+    for val in fibonacci_gen(10):
+        print(val, end=" ")
+    print()
+
+    sample_text = "Line 1\nLine 2\nLine 3"
+    print("Simulated file read:")
+    for line in read_large_file_gen(sample_text):
+        print(f"> {line}")

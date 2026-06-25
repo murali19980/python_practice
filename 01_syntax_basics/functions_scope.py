@@ -1,33 +1,34 @@
 """
 Practice: Functions & Scope
-Prompt:
-1. greet(name, greeting="Hello") -> returns "Hello, name!".
-2. sum_all(*args) -> returns sum of any number of integers.
-3. print_info(**kwargs) -> prints all key-value pairs passed.
-4. Demonstrate global vs local: Create counter = 0 at top level. Define increment() that uses global counter to modify it. Define local_example() that has a local counter = 10 and prints it.
 """
-
-counter = 0
+counter = 0  # global
 
 def greet(name, greeting="Hello"):
-    # TODO: Implement
-    pass
+    return f"{greeting}, {name}!"
 
 def sum_all(*args):
-    # TODO: Implement
-    pass
+    return sum(args)
 
 def print_info(**kwargs):
-    # TODO: Implement
-    pass
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
 def increment():
-    # TODO: Implement using global counter
-    pass
+    global counter
+    counter += 1
+    return counter
 
 def local_example():
-    # TODO: Implement
-    pass
+    counter = 10  # local
+    print(f"Local counter: {counter}")
 
 if __name__ == "__main__":
-    pass
+    print(greet("Murali"))
+    print(greet("Murali", "Hi"))
+    print(f"Sum: {sum_all(1, 2, 3, 4, 5)}")
+    print_info(name="Alice", age=30, city="NYC")
+    print(f"Global counter before increment: {counter}")
+    increment()
+    print(f"Global counter after increment: {counter}")
+    local_example()
+    print(f"Global counter remains: {counter}")

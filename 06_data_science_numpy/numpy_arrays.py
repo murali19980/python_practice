@@ -1,13 +1,19 @@
 """
 Practice: NumPy Arrays
-Prompt:
-- Import numpy as np.
-1. Create array from [1,2,3,4,5,6] and reshape to (2,3).
-2. Slice the second row and first two columns.
-3. Compute mean, median, standard deviation of the flattened array.
 """
+import numpy as np
 
-# TODO: Implement
+def numpy_demo():
+    arr = np.array([1, 2, 3, 4, 5, 6])
+    print("Original:", arr)
+    reshaped = arr.reshape(2, 3)
+    print("Reshaped (2,3):\n", reshaped)
+    print("Second row, first two columns:", reshaped[1, :2])
+
+    flattened = arr.flatten()
+    print(f"Mean: {np.mean(flattened):.2f}")
+    print(f"Median: {np.median(flattened):.2f}")
+    print(f"Std Dev: {np.std(flattened):.2f}")
 
 if __name__ == "__main__":
-    pass
+    numpy_demo()

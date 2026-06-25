@@ -1,24 +1,22 @@
 """
-Practice: Regular Expressions (re)
-Prompt:
-- Import re.
-1. extract_emails(text) -> return list of all emails using regex r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'.
-2. validate_phone(phone) -> check if string matches (XXX) XXX-XXXX or XXX-XXX-XXXX format.
-3. replace_digits(text) -> replace all digits with #.
+Practice: Regular Expressions
 """
 import re
 
 def extract_emails(text):
-    # TODO: Implement
-    pass
+    pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+    return re.findall(pattern, text)
 
 def validate_phone(phone):
-    # TODO: Implement
-    pass
+    pattern = r'^(\d{3}-\d{3}-\d{4}|\(\d{3}\) \d{3}-\d{4})$'
+    return bool(re.match(pattern, phone))
 
 def replace_digits(text):
-    # TODO: Implement
-    pass
+    return re.sub(r'\d', '#', text)
 
 if __name__ == "__main__":
-    pass
+    text = "Contact me at test@example.com or john.doe@company.org"
+    print("Emails:", extract_emails(text))
+    print("Validate (123-456-7890):", validate_phone("123-456-7890"))
+    print("Validate ((123) 456-7890):", validate_phone("(123) 456-7890"))
+    print("Replace digits in 'abc123def456':", replace_digits("abc123def456"))

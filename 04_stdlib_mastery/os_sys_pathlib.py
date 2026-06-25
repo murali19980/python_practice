@@ -1,18 +1,34 @@
 """
-Practice: OS, Sys, and Pathlib
-Prompt:
-- Use pathlib.Path:
-  1. Create a folder named test_folder (if not exists).
-  2. List all .py files in the current directory.
-  3. Join two paths using /.
-- Use os:
-  4. Print current working directory, change directory to test_folder, create a dummy file, print its absolute path.
+Practice: os, sys, pathlib
 """
 import os
-import sys
 from pathlib import Path
 
-# TODO: Implement
+def pathlib_demo():
+    p = Path("test_folder")
+    p.mkdir(exist_ok=True)
+    print(f"Created/verified folder: {p.absolute()}")
+
+    py_files = list(Path(".").glob("*.py"))
+    print(f"Python files in current dir: {[f.name for f in py_files]}")
+
+    joined = Path("parent") / "child" / "file.txt"
+    print(f"Joined path: {joined}")
+
+def os_demo():
+    print(f"Current working dir: {os.getcwd()}")
+    os.chdir("test_folder")
+    with open("dummy.txt", "w") as f:
+        f.write("Hello")
+    print(f"Absolute path: {os.path.abspath('dummy.txt')}")
+    
+    # Cleanup to keep workspace clean
+    if os.path.exists("dummy.txt"):
+        os.remove("dummy.txt")
+    os.chdir("..")
+    if os.path.exists("test_folder"):
+        os.rmdir("test_folder")
 
 if __name__ == "__main__":
-    pass
+    pathlib_demo()
+    os_demo()

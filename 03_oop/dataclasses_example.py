@@ -1,15 +1,21 @@
 """
 Practice: Dataclasses
-Prompt:
-- Import dataclass.
-- Define Person dataclass with name: str, age: int, city: str = "Unknown".
-- Add frozen=True to make it immutable.
-- Implement __post_init__ to print "Person created!".
-- Create an instance and try modifying it (catch the frozen error).
 """
-from dataclasses import dataclass
+from dataclasses import dataclass, FrozenInstanceError
 
-# TODO: Implement
+@dataclass(frozen=True)
+class Person:
+    name: str
+    age: int
+    city: str = "Unknown"
+
+    def __post_init__(self):
+        print(f"Person {self.name} created!")
 
 if __name__ == "__main__":
-    pass
+    p = Person("Alice", 30, "NYC")
+    print(p)
+    try:
+        p.age = 31
+    except FrozenInstanceError as e:
+        print(f"Cannot modify frozen dataclass: {e}")
